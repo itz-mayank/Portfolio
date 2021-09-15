@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Mayank Agarwal's Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+</head>
+
+<body>
+
+
+    <div class="wrapper">
+        <div class="hero-section">
+            <img src="assets/imgs/white logo1.png" alt="" class="logo">
+
+            <h2 class="designation">UI/UX DESIGNER & DEVELOPER</h2>
+            <h1 class="fname">MAYANK</h1>
+            <h1 class="lname">AGARWAL</h1>
+
+            <div class="btn-sec">
+                  <button class="custom-btn btn-11">More About Me</button>
+                  <button class="custom-btn btn-11">Hire Me</button>
+            </div>
+
+            <section>
+                  <ul class="icon-list">
+                    <li class="icon-item">
+                      <a href="#" class="icon-link"><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li class="icon-item">
+                      <a href="#" class="icon-link"><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li class="icon-item">
+                      <a href="#" class="icon-link"><i class="fab fa-dribbble"></i></a>
+                    </li>
+                    <li class="icon-item">
+                      <a href="#" class="icon-link"><i class="fab fa-youtube"></i></a>
+                    </li>
+                    <li class="icon-item">
+                      <a href="#" class="icon-link"><i class="fab fa-linkedin-in" ></i></a>
+                    </li>    
+                  </ul>
+            </section>
+<!--<div class="hamburger">
+        <div class="cross menu--2">
+            <label>
+                <input type="checkbox">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="30" />
+                    <path class="line--1" d="M0 70l28-28c2-2 2-2 7-2h64" />
+                    <path class="line--2" d="M0 50h99" />
+                    <path class="line--3" d="M0 30l28 28c2 2 2 2 7 2h64" />
+                </svg>
+            </label>
+        </div>
+    </div> -->
+
+            <div class="menu-btn">
+                  <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+        </div>
+
+        <div class="menu">
+            <div class="close-menu">
+                  <i class="fa fa-times" aria-hidden="true"></i>
+            </div>
+
+            <div class="ocean">
+                  <div class="wave"></div>
+                  <div class="wave"></div>
+            </div>
+
+            <div class="nav">
+                  <ul class="main-menu">
+                        <li class="main-menu-item">
+                              <a href="#">Home</a>
+                        </li>
+
+                        <li class="main-menu-item">
+                              <a href="#">About Me &nbsp; <i class="fas fa-plus"></i></a>
+
+                              <ul class="submenu">
+                                    <li class="submenu-item">
+                                          <a href="#">Fonts</a>
+                                    </li>
+                                    <li class="submenu-item">
+                                          <a href="#">Mockups</a>
+                                    </li>
+                                    <li class="submenu-item">
+                                          <a href="#">Presets</a>
+                                    </li>
+                              </ul>
+                        </li>
+
+                        <li class="main-menu-item">
+                              <a href="#">Services &nbsp; <i class="fas fa-plus"></i></a>
+
+                              <ul class="submenu">
+                                    <li class="submenu-item">
+                                          <a href="#">Timeless flow</a>
+                                    </li>
+                                    <li class="submenu-item">
+                                          <a href="#">Foretime</a>
+                                    </li>
+                                    <li class="submenu-item">
+                                          <a href="#">Never again</a>
+                                    </li>
+                                    <li class="submenu-item">
+                                          <a href="#">Departure</a>
+                                    </li>
+                              </ul>
+                        </li>
+
+                        <li class="main-menu-item">
+                              <a href="#">Experirnces</a>
+                        </li>
+
+                        <li class="main-menu-item">
+                              <a href="#">Contact &nbsp; <i class="fas fa-plus"></i></a>
+
+                              <ul class="submenu">
+                                    <li class="submenu-item">
+                                          <a href="#">Call now</a>
+                                    </li>
+                                    <li class="submenu-item">
+                                          <a href="#">Mail us</a>
+                                    </li>
+                              </ul>
+                        </li>
+                  </ul>
+            </div>
+
+            <div class="contact">
+                  <p class="call"><i class="fas fa-phone-alt"></i>&nbsp;&nbsp;&nbsp;+91 8109528878</p>
+                  <p class="mail"><i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;mnkagarwal.bhl@gmail.com</p>
+            </div>
+
+            <div class="media">
+                  <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                  </ul>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $('ul.main-menu li').click(function(e) {
+                e.preventDefault();
+
+                if($(this).siblings('li').find('ul.submenu:visible').length) {
+                    $('ul.submenu').slideUp('normal');
+                }
+                $(this).find('ul.submenu').slideToggle('normal');
+        });
+
+        var t1 = new TimelineMax({paused: true});
+
+        t1.to(".menu", 0.8, {
+                autoAlpha: 1
+        });
+
+        t1.staggerFrom(".main-menu li a:not(.submenu li a)", 0.2, {
+                opacity: 0,
+                y: 10,
+                ease: Power3.easeInOut
+        }, 0.1);
+
+        t1.from(".submenu", 0.8, {
+                autoAlpha: 0
+        });
+
+        t1.staggerFrom(".media ul li", 1, {
+                opacity: 0,
+                y: 10,
+                ease: Power3.easeInOut
+        }, 0.1, "-=2");
+
+        t1.from(".call", 1, {
+                delay: -2,
+                opacity: 0,
+                y: 10,
+                ease: Power3.easeInOut
+        });
+
+        t1.from(".mail", 1, {
+                delay: -1.6,
+                opacity: 0,
+                y: 10,
+                ease: Power3.easeInOut
+        });
+
+        t1.reverse();
+
+        $(document).on("click", ".menu-btn", function() {
+                t1.reversed(!t1.reversed());
+        });
+
+        $(document).on("click", ".close-menu", function() {
+                t1.reversed(!t1.reversed());
+        });
+
+    </script>
+     
+
+    <!-- <script src="script.js"></script> -->
+</body>
+
+</html>
