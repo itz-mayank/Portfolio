@@ -66,3 +66,57 @@
       font-size: 14px;
   }
   }
+
+
+  @media(max-width: 476px) {
+    h1 {
+      font-size: 32px;
+      letter-spacing: 25px;
+      text-indent: 25px;
+    }
+  
+    .designation {
+      font-size: 16px;
+    }
+  
+    .custom-btn{
+      width: 165px;
+      height: 48px;
+      font-size: 14px;
+      display: inline-block;
+  }
+
+    button {
+      margin: 0 10px 10px 10px;
+      outline: none;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;  
+    }
+  }
+
+
+  /* .btn-sec{
+    width: 100%;
+    position: absolute;
+    top: 78%;
+  }
+  
+  button {
+    margin: 0 20px 20px 20px;
+    outline: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;  
+  }
+  
+  .custom-btn {
+    width: 200px;
+    height: 60px;
+    font-size: 16px;
+    padding: 10px 25px;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+  } */
