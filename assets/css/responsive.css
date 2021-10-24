@@ -1,100 +1,160 @@
-  @media(max-width: 1200px) {
-    h1 {
-      font-size: 80px;
-    }
-    .designation {
-      font-size: 24px;
-    }
-    .custom-btn{
-        width: 170px;
-        height: 51px;
-        font-size: 14px;
-    }
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 80px;
   }
-  
-  @media(max-width: 890px) {
-    h1 {
-      font-size: 50px;
-    }
-    .designation {
-      top: 33%;
-      font-size: 22px;
-    }
-    .btn-sec{
-      top: 70%;
-    }
-    .fname {
-      top: 42%;
+  .designation {
+    font-size: 24px;
   }
-    .lname {
-      top: 52%;
+  .custom-btn {
+    width: 170px;
+    height: 51px;
+    font-size: 14px;
   }
 
-  }
- 
-  @media(max-width: 768px) {
-    .nav {
-          margin-top: 20%;
-    }
-  
-    .contact {
-          display: none;
-    }
-
-    .icon-list{
-      visibility: hidden;
-      display: none;
-    }
-  }
-  
-
-  
-  @media(max-width: 670px) {
-    h1 {
-      font-size: 40px;
-      letter-spacing: 30px;
-      text-indent: 30px;
-    }
-  
-    .designation {
-      font-size: 18px;
-    }
-  
-    .custom-btn{
-      width: 170px;
-      height: 51px;
-      font-size: 14px;
-  }
+  .contact {
+    color: #fff;
+    position: absolute;
+    bottom: 70px;
+    left: 22%;
   }
 
-
-  @media(max-width: 476px) {
-    h1 {
-      font-size: 32px;
-      letter-spacing: 25px;
-      text-indent: 25px;
-    }
-  
-    .designation {
-      font-size: 16px;
-    }
-  
-    .custom-btn{
-      width: 165px;
-      height: 48px;
-      font-size: 14px;
-      display: inline-block;
+  .media {
+    font-weight: bold;
+    position: absolute;
+    bottom: 27px;
+    left: 22%;
   }
 
-    button {
-      margin: 0 10px 10px 10px;
-      outline: none;
-      box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;  
-    }
+  .media i.fab {
+    font-size: 20px;
+    padding-right: 32px;
+  }
+}
+
+@media (max-width: 890px) {
+  h1 {
+    font-size: 50px;
+  }
+  .designation {
+    top: 33%;
+    font-size: 22px;
+  }
+  .btn-sec {
+    top: 70%;
+  }
+  .fname {
+    top: 42%;
+  }
+  .lname {
+    top: 52%;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    margin-top: 20%;
   }
 
+  .icon-list {
+    visibility: hidden;
+    display: none;
+  }
+}
 
-  /* .btn-sec{
+@media (max-width: 670px) {
+  h1 {
+    font-size: 40px;
+    letter-spacing: 30px;
+    text-indent: 30px;
+  }
+
+  .designation {
+    font-size: 18px;
+  }
+
+  .custom-btn {
+    width: 170px;
+    height: 51px;
+    font-size: 14px;
+  }
+
+  .contact {
+    color: #fff;
+    position: absolute;
+    bottom: 70px;
+    left: 15%;
+  }
+
+  .media {
+    font-weight: bold;
+    position: absolute;
+    bottom: 27px;
+    left: 15%;
+  }
+
+  .media i.fab {
+    font-size: 20px;
+    padding-right: 25px;
+  }
+
+  .nav {
+    left: 15%;
+    margin-top: 20%;
+  }
+}
+
+@media (max-width: 476px) {
+  h1 {
+    font-size: 32px;
+    letter-spacing: 25px;
+    text-indent: 25px;
+  }
+
+  .designation {
+    font-size: 16px;
+  }
+
+  .custom-btn {
+    width: 165px;
+    height: 48px;
+    font-size: 14px;
+    display: inline-block;
+  }
+
+  button {
+    margin: 0 10px 10px 10px;
+    outline: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+      rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  }
+
+  .contact {
+    font-size: 12px;
+  }
+
+  .media i.fab {
+    font-size: 16px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 350px) {
+  h1 {
+    font-size: 28px;
+    letter-spacing: 22px;
+    text-indent: 22px;
+  }
+
+  .designation {
+    font-size: 12px;
+  }
+
+  .contact {
+    font-size: 10px;
+  }
+}
+
+/* .btn-sec{
     width: 100%;
     position: absolute;
     top: 78%;
